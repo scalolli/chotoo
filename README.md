@@ -1,4 +1,4 @@
-data-loader
+Chotoo
 ===========
 
 Utility written in scala to read data from files with different formats csv, excel, txt files etc.
