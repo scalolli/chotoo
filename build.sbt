@@ -1,4 +1,4 @@
-name := "Data Loader"
+name := "Chotoo"
 
 version := "0.1"
 
