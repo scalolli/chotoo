@@ -17,7 +17,7 @@ object KickOff {
   		" \n Usage:- run filename searchstring"
 
   /* Entry point of the application */
-  def main(args: Array[String]) = {
+  def main(args: Array[String]) {
     println("Chotoo boostrapping....")
 
     if (args.length < 2) println(usage)

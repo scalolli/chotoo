@@ -40,7 +40,7 @@ class Initiator(fileName: String, searchString: String) {
     val nonEmptyLines: LongTraversable[String] = Path(fileName).lines(includeTerminator = false)
       .dropWhile(_ isEmpty)
       .takeWhile(_ nonEmpty)
-    
+    Path("entriesfound.txt").delete(true)
     nonEmptyLines.foreach(e => process(e.split(" ").toList))
     
   }
@@ -59,6 +59,6 @@ class Initiator(fileName: String, searchString: String) {
    * Writes the searched string into a file
    */
   def writeToOutput(foundString: Traversable[String]) = {
-    Path("entriesfound.txt").writeStrings(foundString)
+    Path("entriesfound.txt").appendStrings(foundString)
   }
 }
