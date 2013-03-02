@@ -20,7 +20,7 @@ object KickOff {
   def main(args: Array[String]) = {
     println("Chotoo boostrapping....")
 
-    if (args.length <= 2) println(usage)
+    if (args.length < 2) println(usage)
     else kickoff(args(0), args(1))
   }
 
