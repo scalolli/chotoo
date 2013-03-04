@@ -1,6 +1,7 @@
 package org.chotoo.main
 
 import org.chotoo.fileproc.Initiator
+import scalax.io.Resource
 
 /** 
  * Main File which kicks off the application.
@@ -13,8 +14,8 @@ import org.chotoo.fileproc.Initiator
  */
 object KickOff {
 
-  val usage = "File name and SearchString not supplied as arguments" +
-  		" \n Usage:- run filename searchstring"
+  val usage = "Directory Path and SearchString not supplied as arguments" +
+  		" \n Usage:- run Directory searchstring"
 
   /* Entry point of the application */
   def main(args: Array[String]) {
@@ -25,8 +26,8 @@ object KickOff {
   }
 
   /* Initiate file processing */
-  def kickoff(fileName: String, searchString: String) {
-    val initiator = new Initiator(fileName, searchString)
+  def kickoff(pathToDir: String, searchString: String) {
+    val initiator = new Initiator(pathToDir, searchString)
     initiator.initiate()
   }
 }
