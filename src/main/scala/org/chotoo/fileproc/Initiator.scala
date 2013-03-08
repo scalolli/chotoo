@@ -19,7 +19,6 @@ class Initiator(pathToDir: String, searchString: String) {
 
   def initiate() {
     println("FileName as retrieved " + pathToDir)
-    Path("entriesfound.txt").delete(true) //TODO: find some other alternatives
     val path = Path.fromString(pathToDir)
 
     //check if the given file or path is valid or not.
